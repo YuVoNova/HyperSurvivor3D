@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b6389ca71de648408f7fca8a4c5feb5, type: 3}
+  m_Name: Shield
+  m_EditorClassIdentifier: 
+  Name: Shield
+  UIPrefab: {fileID: 5471701263093744736, guid: b09a655786b2e9c419127394a80a689e, type: 3}
+  LevelValues:
+  - ValueIdentifier: Set Damage Block Count
+    Values:
+    - 0
+    - 1
+    - 2
+    - 3
+  UpgradeType: 1
+  ClassType: 0
+  CurrentLevel: 0

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b6389ca71de648408f7fca8a4c5feb5, type: 3}
+  m_Name: Luck
+  m_EditorClassIdentifier: 
+  Name: Luck
+  UIPrefab: {fileID: 9027902780475057109, guid: 40cc83a729dda0948a434103fd70b7d8, type: 3}
+  LevelValues:
+  - ValueIdentifier: Set Luck
+    Values:
+    - 59
+    - 69
+    - 79
+    - 89
+  UpgradeType: 0
+  ClassType: 0
+  CurrentLevel: 0

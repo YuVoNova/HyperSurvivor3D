@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10220e2e5f106d94f902a744e4a11c51, type: 3}
+  m_Name: ArenaColorData
+  m_EditorClassIdentifier: 
+  Materials:
+  - {fileID: 2100000, guid: a785e64d925a415429c3b1918777173b, type: 2}
+  - {fileID: 2100000, guid: 8a2353583ace3ae4ebff72695abdbf1b, type: 2}
+  - {fileID: 2100000, guid: 16d2fb97752369e45b567061cee5917d, type: 2}
+  - {fileID: 2100000, guid: b7583c1e0d6a74449a7cc8417f0fda67, type: 2}
+  - {fileID: 2100000, guid: 6c077dc63b731f340aaf849876cfda44, type: 2}

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b6389ca71de648408f7fca8a4c5feb5, type: 3}
+  m_Name: AirStrike
+  m_EditorClassIdentifier: 
+  Name: AirStrike
+  UIPrefab: {fileID: 2297015952894536504, guid: 3aa63f287d4c4284583f11d4efcbb9a6, type: 3}
+  LevelValues:
+  - ValueIdentifier: Set Reload Time
+    Values:
+    - 0
+    - 6
+    - 5
+    - 4
+  - ValueIdentifier: Set Damage
+    Values:
+    - 0
+    - 20
+    - 40
+    - 60
+  UpgradeType: 1
+  ClassType: 0
+  CurrentLevel: 0
