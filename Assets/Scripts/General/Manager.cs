@@ -1,11 +1,11 @@
+using Tabtale.TTPlugins;
 using System;
 using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
-using GameAnalyticsSDK;
-using Facebook.Unity;
 
 public class Manager : MonoBehaviour
 {
@@ -74,21 +74,6 @@ public class Manager : MonoBehaviour
         Save();
     }
 
-    private void OnApplicationPause(bool pause)
-    {
-        if (!pause)
-        {
-            if (FB.IsInitialized)
-            {
-                FB.ActivateApp();
-            }
-            else
-            {
-                FB.Init(() => { FB.ActivateApp(); });
-            }
-        }
-    }
-
 
     // Functions
 
@@ -101,20 +86,13 @@ public class Manager : MonoBehaviour
         InitializeUpgrades();
 
         InitializeCollectibleData();
+
+        DebugManager.instance.enableRuntimeUI = false;
     }
 
     private void InitializeSDK()
     {
-        GameAnalytics.Initialize();
-
-        if (FB.IsInitialized)
-        {
-            FB.ActivateApp();
-        }
-        else
-        {
-            FB.Init(() => { FB.ActivateApp(); });
-        }
+        TTPCore.Setup();
     }
 
     private void InitializeUpgrades()

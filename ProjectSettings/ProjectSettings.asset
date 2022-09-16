@@ -3,7 +3,7 @@
 --- !u!129 &1
 PlayerSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 22
+  serializedVersion: 23
   productGUID: 85c112ae421bba542bcc57d95b4520b1
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
@@ -147,11 +147,13 @@ PlayerSettings:
     enable360StereoCapture: 0
   isWsaHolographicRemotingEnabled: 0
   enableFrameTimingStats: 0
+  enableOpenGLProfilerGPURecorders: 1
   useHDRDisplay: 0
   D3DHDRBitDepth: 0
   m_ColorGamuts: 0000000003000000
   targetPixelDensity: 30
   resolutionScalingMode: 0
+  resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
@@ -162,8 +164,8 @@ PlayerSettings:
     tvOS: 0
   overrideDefaultApplicationIdentifier: 0
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 19
-  AndroidTargetSdkVersion: 0
+  AndroidMinSdkVersion: 23
+  AndroidTargetSdkVersion: 30
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   stripEngineCode: 1
@@ -218,6 +220,7 @@ PlayerSettings:
   iOSLaunchScreeniPadCustomStoryboardPath: 
   iOSDeviceRequirements: []
   iOSURLSchemes: []
+  macOSURLSchemes: []
   iOSBackgroundModes: 0
   iOSMetalForceHardShadows: 0
   metalEditorSupport: 1
@@ -237,11 +240,11 @@ PlayerSettings:
   clonedFromGUID: 9870af204204ab84596f8a656f2f2ce6
   templatePackageId: com.unity.template.universal@10.8.0
   templateDefaultScene: Assets/Scenes/SampleScene.unity
-  useCustomMainManifest: 1
+  useCustomMainManifest: 0
   useCustomLauncherManifest: 0
-  useCustomMainGradleTemplate: 0
-  useCustomLauncherGradleManifest: 0
-  useCustomBaseGradleTemplate: 0
+  useCustomMainGradleTemplate: 1
+  useCustomLauncherGradleManifest: 1
+  useCustomBaseGradleTemplate: 1
   useCustomGradlePropertiesTemplate: 0
   useCustomProguardFile: 0
   AndroidTargetArchitectures: 3
@@ -428,7 +431,7 @@ PlayerSettings:
     m_Automatic: 1
   - m_BuildTarget: AndroidPlayer
     m_APIs: 150000000b000000
-    m_Automatic: 0
+    m_Automatic: 1
   - m_BuildTarget: WebGLSupport
     m_APIs: 0b000000
     m_Automatic: 0
@@ -446,6 +449,7 @@ PlayerSettings:
     m_EncodingQuality: 1
   m_BuildTargetGroupLightmapSettings: []
   m_BuildTargetNormalMapEncoding: []
+  m_BuildTargetDefaultTextureCompressionFormat: []
   playModeTestRunnerEnabled: 0
   runPlayModeTestAsEditModeTest: 0
   actionOnDotNetUnhandledException: 1
@@ -464,6 +468,7 @@ PlayerSettings:
   switchScreenResolutionBehavior: 2
   switchUseCPUProfiler: 0
   switchUseGOLDLinker: 0
+  switchLTOSetting: 0
   switchApplicationID: 0x01004b9000490000
   switchNSODependencies: 
   switchTitleNames_0: 
@@ -594,7 +599,9 @@ PlayerSettings:
   switchPlayerConnectionEnabled: 1
   switchUseNewStyleFilepaths: 0
   switchUseMicroSleepForYield: 1
+  switchEnableRamDiskSupport: 0
   switchMicroSleepForYieldTime: 25
+  switchRamDiskSpaceSize: 12
   ps4NPAgeRating: 12
   ps4NPTitleSecret: 
   ps4NPTrophyPackPath: 
@@ -701,7 +708,9 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: TTP_REWARDED_INTERSTITIALS;TTP_PRIVACY_SETTINGS;TTP_APPSFLYER;TTP_REWARDED_ADS;TTP_PROMOTION;TTP_INTERSTITIALS;TTP_ANALYTICS;TTP_GAMEPROGRESSION;TTP_RATEUS;TTP_BANNERS;TTP_POPUPMGR;TTP_CRASHTOOL;TTP_OPENADS
+    iPhone: TTP_REWARDED_INTERSTITIALS;TTP_PRIVACY_SETTINGS;TTP_APPSFLYER;TTP_REWARDED_ADS;TTP_PROMOTION;TTP_INTERSTITIALS;TTP_ANALYTICS;TTP_GAMEPROGRESSION;TTP_RATEUS;TTP_BANNERS;TTP_POPUPMGR;TTP_CRASHTOOL;TTP_OPENADS
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -713,7 +722,6 @@ PlayerSettings:
   suppressCommonWarnings: 1
   allowUnsafeCode: 0
   useDeterministicCompilation: 1
-  useReferenceAssemblies: 1
   enableRoslynAnalyzers: 1
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
@@ -751,6 +759,7 @@ PlayerSettings:
   metroFTAName: 
   metroFTAFileTypes: []
   metroProtocolName: 
+  vcxProjDefaultLanguage: 
   XboxOneProductId: 
   XboxOneUpdateKey: 
   XboxOneSandboxId: 
@@ -801,4 +810,6 @@ PlayerSettings:
   organizationId: 
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
+  playerDataPath: 
+  forceSRGBBlit: 1
   virtualTexturingSupportEnabled: 0
